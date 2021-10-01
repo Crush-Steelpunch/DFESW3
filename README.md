@@ -10,3 +10,4 @@ Change on the local
 
 Change on remote
 
+Add a new line to the README
