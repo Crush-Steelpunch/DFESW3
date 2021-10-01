@@ -25,19 +25,57 @@
 
 #if [ ${var1} -ne ${var4} ]
 #then
-#   echo The test returned true!  
+#   echo The test returned true!
 #fi
 
 
 # Test on USER name
 
-if [ $USER = root ]
+#if [ $PWD = $HOME ]
+#then
+#    echo "Welcome Home"
+#else
+#    echo "You're far from home"
+#fi
+
+#for i in item1 item2 cat sheep cheeseburger
+#do
+#    echo "This loop i is equal to: $i"
+#done
+
+#mathsvar=1
+
+#while [ $mathsvar -lt 100 ]
+#do
+#   echo $mathsvar
+#   ((mathsvar++))
+#done
+
+#while true
+#do
+#   date
+#done
+
+#echo "Please enter your name: "
+read -p "Please enter your name: " nameo
+
+
+if [ $name = 'leon' ]
 then
-    echo "Hello Admin person"
-else
-    echo "You're not my admin"
+   echo "Hello, you are the best"
+elif [ $name = 'Albert' ]
+then
+   echo "Your name is picked for an example"
+elif [ $name = 'Abigail' ]
+then
+   echo "Cosy jumper"
 fi
 
 
-
+#case ${animal} in
+#   "cat","dog","cow") echo "you are a mammal";;
+#   "chicken","swan","osterich") echo "you are a bird";;
+#   "crocodile","lizard") echo "you are a reptile";;
+#   *) echo "wat";;
+#esac
 
