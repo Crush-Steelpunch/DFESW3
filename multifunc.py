@@ -4,8 +4,15 @@ def add_two_to_two_numbers(num1In,num2In):
     outList = [ out1Var,out2Var]
     return outList
 
-inputNum1 = int(input('num1: '))
-inputNum2 = int(input('num2: '))
-outNum = add_two_to_two_numbers(inputNum1,inputNum2)
+def calcuscore(hwIn,asmIn,feIn):
+    perCent = round( ( ( hwIn + asmIn + feIn ) / 175 ) * 100 )
+    # In this space grade scores between A-F
+    return perCent
 
-print(outNum)
+def leon_procedure(inputDataVar):
+    print(inputDataVar)
+    if inputDataVar < 5:
+        exit()
+
+def len():
+    print('Len is the best')
