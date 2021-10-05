@@ -23,4 +23,6 @@ while feScore > 100:
 
 outVar = calcuscore(hwScore,asmScore,feScore)
 
-print(f"Yo {studentName} {outVar}%")
+#print(f"Yo {studentName} {outVar}%")
+
+#beep beep i'm a sheep
