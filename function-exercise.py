@@ -16,7 +16,7 @@ feScore = 200
 studentName = input('NAME IN: ')
 while hwScore > 25:
     hwScore = int(input('HW IN: '))
-while asmScore > 50
+while asmScore > 50:
     asmScore = int(input('ASM IN: '))
 while feScore > 100:
     feScore = int(input('FES IN: '))
