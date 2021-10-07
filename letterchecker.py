@@ -1,11 +1,21 @@
 
+
+
+
 class Letterchecker():
-    vowels = 'aeiou'
+
+    def __init__(self,letterCheck = 'aeiou'):
+        self.letterCheck = letterCheck.lower()
 
     def checkthing(self,x):
-        return x in self.vowels
+        return x.lower() in self.letterCheck
 
 
 vowlchecker = Letterchecker()
+letterswithoneendpoint = Letterchecker('p')
+horizontalsymmetry = Letterchecker('BCDEHIKOX')
 
-print(vowlchecker.checkthing('f'))
+for testIn in 't':
+    print(vowlchecker.checkthing(testIn))
+    print(letterswithoneendpoint.checkthing(testIn))
+    print(horizontalsymmetry.checkthing(testIn))
