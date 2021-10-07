@@ -40,9 +40,26 @@ class Dodo(Bird):
         if not self.extinct:
             self.babies += 1
 
+class Penguin(Bird):
+
+    def eat(self):
+        return "The Fish"
+    
+    def reproduce(self):
+        if not self.extinct:
+            self.babies += 20
+            return self.babies
+
 
 johnTheDodo = Dodo()
 fredTheDodo = Dodo()
+
+johnTheDodo.extinct = False
+print(fredTheDodo.extinct)
+johnTheDodo.reproduce()
+
+trevthePenguin = Penguin()
+print(trevthePenguin.reproduce())
 
 wolTheOwl = Owl()
 

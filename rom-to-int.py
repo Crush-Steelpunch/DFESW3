@@ -13,15 +13,12 @@ class Romtont():
         for loopVar in self.easynums.keys():
             runnintotal = runnintotal + (romnumin.count(loopVar) * self.easynums[loopVar])
         return runnintotal
-    def callthecal():
-        self.thecalcmethod('X')
     
 
 asterixthegaul = Romtont()
 
 getafixthedrid = Romtont()
 getafixthedrid.easynums = {}
-getafixthedrid.callthecal()
 
 print(asterixthegaul.thecalcmethod('DCCCLXXIV'))
 print(asterixthegaul.thecalcmethod('MCMXCIV'))
